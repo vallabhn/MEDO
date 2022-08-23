@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:id="@+id/dashboard_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingHorizontal="25sp"
+        android:paddingVertical="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bw_black"
+            android:text="@string/app_name"
+            android:textColor="@color/appblue"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_header"
+        android:layout_marginTop="10sp"
+        android:layout_marginHorizontal="25dp"
+        android:paddingTop="20dp"
+        android:background="@color/appblue">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user"
+            android:layout_marginHorizontal="20sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            app:cardBackgroundColor="@color/appblue"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginTop="5sp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/profile_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="User Name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5sp"
+                    android:text="User Name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginVertical="20sp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:layout_editor_absoluteX="30dp">
+
+
+        <LinearLayout
+            android:id="@+id/updateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginVertical="5sp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/blue_corner_bg"
+                android:padding="5sp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20sp"
+                android:text="Update Profile"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mycart"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginVertical="5sp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/blue_corner_bg"
+                android:padding="5sp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20sp"
+                android:text="My Cart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myorders"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginVertical="5sp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/blue_corner_bg"
+                android:padding="5sp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20sp"
+                android:text="My Orders"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/referthisapp"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginVertical="5sp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/blue_corner_bg"
+                android:padding="5sp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20sp"
+                android:text="Share this app"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginVertical="5sp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/blue_corner_bg"
+                android:padding="5sp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20sp"
+                android:text="Contact Us"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginVertical="5sp"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/blue_corner_bg"
+                android:padding="5sp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20sp"
+                android:text="Logout"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dashboard_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appblue"
+        android:paddingVertical="5sp"
+        android:paddingHorizontal="10dp"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/homebtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:padding="5sp"
+                android:src="@drawable/home"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:text="Home"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/bw_regular"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upload_prescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:padding="5sp"
+                android:src="@drawable/prescription"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:text="Upload"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/bw_regular"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profilebtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:padding="5sp"
+                android:src="@drawable/user"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:text="Profile"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/bw_regular"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cartbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:padding="5sp"
+                android:src="@drawable/shopping_cart"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:text="Cart"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/bw_regular"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

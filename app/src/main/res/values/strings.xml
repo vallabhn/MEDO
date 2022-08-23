@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MEDO</string>
+    <string name="MEDO">MEDO</string>
+    <string name="rupees_symbol">₹</string>
+    <string name="login_quote">“To keep the body in good health is a duty…otherwise we shall not be able to keep the mind strong and clear.”\n- Buddha</string>
+    <string name="forgot_password_quote">“Good health is not something we can buy. However, it can be an extremely valuable savings account.”\n- Anne Wilson Schaef</string>
+    <string name="signup_quote">“It is health that is the real wealth, and not pieces of gold and silver.” \n– Mahatma Gandhi</string>
+    <string-array name="city_array">
+        <item>Aurangabad</item>
+        <item>Jalna</item>
+        <item>Kolhapur</item>
+        <item>Mumbai</item>
+        <item>Nanded</item>
+        <item>Parbhani</item>
+        <item>Pune</item>
+        <item>Satara</item>
+        <item>Solapur</item>
+    </string-array>
+
+    <string-array name="state_array">
+        <item>Maharashtra</item>
+    </string-array>
+</resources>

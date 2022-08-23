@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cart_items"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="6dp"
+       app:cardElevation="6dp"
+        app:cardBackgroundColor="#72D9EFD2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/cart_item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5sp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/cart_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="5sp"
+        android:layout_toEndOf="@+id/cart_item_image"
+        android:fontFamily="sans-serif"
+        android:text="Username"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cart_item_packing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_item_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_toEndOf="@+id/cart_item_image"
+        android:fontFamily="sans-serif"
+        android:text="1 Strip of 15 tablet"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/cart_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_item_packing"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_toEndOf="@+id/cart_item_image"
+        android:fontFamily="sans-serif"
+        android:text="₹999"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cart_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/cart_item_packing"
+        android:layout_marginTop="5dp"
+        android:text="Quantity: 0"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

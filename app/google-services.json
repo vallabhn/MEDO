@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "823348908538",
+    "firebase_url": "https://medo-565aa.firebaseio.com",
+    "project_id": "medo-565aa",
+    "storage_bucket": "medo-565aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823348908538:android:7989a7584eeea59f471443",
+        "android_client_info": {
+          "package_name": "com.valak.medo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823348908538-al5qaacn7andoefik6ijv3uposjtd2ec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.valak.medo",
+            "certificate_hash": "27fed9a7dfb9aad953e3b35cf28e37fa6a7a4f84"
+          }
+        },
+        {
+          "client_id": "823348908538-6knev0gpc5b616i270pjvbu5roputn4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADQ6dlnpaTeW65TnYqJCqYViTSemkK3Z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823348908538-6knev0gpc5b616i270pjvbu5roputn4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
